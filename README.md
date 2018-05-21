@@ -18,6 +18,7 @@ Node.js v10.1.0
 
 Query Example:
 
+Basic Query
 ```
 query {
   user(id: "44") {
@@ -28,6 +29,17 @@ query {
 }
 ```
 
-### TODO
-
-Separate Resolvers from Schema
+Circular Query
+```
+query {
+	user(id:"43") {
+    firstName
+    age
+    company {
+      id
+      name
+      description
+    }
+  }
+}
+```

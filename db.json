@@ -4,12 +4,7 @@
       "id": "40",
       "firstName": "Alex",
       "age": 40,
-      "companyId": "2",
-      "company": {
-        "id": "1",
-        "name": "Apple",
-        "description": "iphone"
-      }
+      "companyId": "2"
     },
     {
       "id": "41",
@@ -19,15 +14,15 @@
     },
     {
       "id": "42",
-      "firstName": "Samantha",
+      "firstName": "Eunyoung",
       "age": 25,
       "companyId": "1"
     },
     {
       "id": "43",
-      "firstName": "Yi",
+      "firstName": "Yi-Wei",
       "age": 27,
-      "companyId": "1"
+      "companyId": "3"
     }
   ],
   "companies": [
@@ -40,6 +35,11 @@
       "id": "2",
       "name": "Google",
       "description": "search"
+    },
+    {
+      "id": "3",
+      "name": "Facebook",
+      "description": "social"
     }
   ]
 }

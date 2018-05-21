@@ -4,14 +4,18 @@
   "description": "a prototype for master thesis",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js",
     "json:server": "json-server --watch db.json",
-    "start": "nodemon --exec babel-node server.js"
+    "tests": "jest"
   },
-  "author": "",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Yi-Wei Hsu",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-jest": "^22.4.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
     "nodemon": "^1.17.3"

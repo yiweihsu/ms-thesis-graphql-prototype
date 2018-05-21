@@ -13,3 +13,12 @@ Node.js v10.1.0
 3. Run JSON server on the port 3000
 4. Navigate to `localhost:4000/graphql/graphiql`
 5. Testing GraphQL in the browser-IDE
+
+### Usage
+
+<!-- Query Example -->
+
+### TODO
+
+Separate Resolvers from Schema
+Integrate JEST 

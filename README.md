@@ -12,13 +12,22 @@ Node.js v10.1.0
 2. `npm start`
 3. Run JSON server on the port 3000
 4. Navigate to `localhost:4000/graphql/graphiql`
-5. Testing GraphQL in the browser-IDE
+5. Querying data through GraphiQL in the browser
 
 ### Usage
 
-<!-- Query Example -->
+Query Example:
+
+```
+query {
+  user(id: "44") {
+    id
+    firstName
+    age
+  }
+}
+```
 
 ### TODO
 
 Separate Resolvers from Schema
-Integrate JEST 

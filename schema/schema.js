@@ -15,6 +15,7 @@ const CompanyType = new GraphQLObjectType({
     id: { type: GraphQLString },
     name: { type: GraphQLString },
     description: { type: GraphQLString },
+    location: { type: GraphQLString },
     users: {
       type: new GraphQLList(UserType),
       resolve(parentValue, args) {
@@ -32,6 +33,9 @@ const UserType = new GraphQLObjectType({
     id: { type: GraphQLString },
     firstName: { type: GraphQLString },
     age: { type: GraphQLInt },
+    gender: { type: GraphQLString },
+    country: { type: GraphQLString },
+    email: { type: GraphQLString },
     company: {
       type: CompanyType,
       resolve(parentValue, args) {

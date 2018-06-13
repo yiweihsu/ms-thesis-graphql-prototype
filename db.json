@@ -1,27 +1,48 @@
 {
   "users": [
     {
+      "id": "43",
+      "firstName": "John",
+      "age": 55,
+      "gender": "male",
+      "country": "U.S.A",
+      "email": "john@gmail.com",
+      "companyId": "2"
+    },
+    {
       "id": "40",
       "firstName": "Alex",
-      "age": 40,
+      "age": 18,
+      "gender": "male",
+      "country": "Canada",
+      "email": "alex@gmail.com",
       "companyId": "2"
     },
     {
       "id": "41",
       "firstName": "Nick",
       "age": 40,
+      "gender": "female",
+      "country": "Germany",
+      "email": "nick@gmail.com",
       "companyId": "2"
     },
     {
       "id": "42",
       "firstName": "Eunyoung",
       "age": 25,
+      "gender": "female",
+      "country": "South Korea",
+      "email": "young@gmail.com",
       "companyId": "1"
     },
     {
-      "id": "43",
+      "id": "23",
       "firstName": "Yi-Wei",
       "age": 27,
+      "gender": "male",
+      "country": "Taiwan",
+      "email": "yiwei@gmail.com",
       "companyId": "3"
     }
   ],
@@ -29,17 +50,20 @@
     {
       "id": "1",
       "name": "Apple",
-      "description": "iphone"
+      "description": "iphone",
+      "location": "California"
     },
     {
       "id": "2",
       "name": "Google",
-      "description": "search"
+      "description": "search",
+      "location": "New York"
     },
     {
       "id": "3",
       "name": "Facebook",
-      "description": "social"
+      "description": "social",
+      "location": "London"
     }
   ]
 }

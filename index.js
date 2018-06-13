@@ -10,7 +10,7 @@ app.use(
   '/graphql',
   expressGraphQL({
     schema,
-    graphiql: true
+    graphiql: true,
   })
 );
 

@@ -1,11 +1,14 @@
+# Bullet Points
+
 - localhost:4000/graphql
-- Auto generated Docs 
+- Auto generated Docs
 - User/Company
 
-=======================================================
+## Use Cases
 
-1. User Type 
+1. User Type
 
+```node
 {
   user(id: "23") {
     id
@@ -16,11 +19,13 @@
     email
   }
 }
+```
 
-=======================================================
+---
 
 2. Company Type
 
+```node
 {
   company(id:"2") {
     id
@@ -29,11 +34,13 @@
     location
   }
 }
+```
 
-=======================================================
+---
 
-3. User with Company 
+3. User with Company
 
+```node
 {
   user(id:"23") {
     id
@@ -50,11 +57,13 @@
     }
   }
 }
+```
 
-=======================================================
+---
 
 4. Company with User
 
+```node
 {
   company(id:"2") {
     id
@@ -73,11 +82,13 @@
     }
   }
 }
+```
 
-=======================================================
+---
 
 5. Circular Data
 
+```node
 {
   user(id: "23") {
     id
@@ -117,3 +128,4 @@
     }
   }
 }
+```

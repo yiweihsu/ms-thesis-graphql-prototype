@@ -1,12 +1,14 @@
 {
   "name": "graphql-prototype",
   "version": "1.0.0",
-  "description": "a prototype for master thesis",
+  "description": "simple prototype for master thesis",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
     "json:server": "json-server --watch db.json",
-    "tests": "jest"
+    "tests": "jest",
+    "prettier": "prettier --single-quote --trailing-comma=all --use-tabs --write ./**/*.js",
+    "lint": "./node_modules/.bin/eslint"
   },
   "jest": {
     "testEnvironment": "node"

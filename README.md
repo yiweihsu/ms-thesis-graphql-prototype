@@ -15,12 +15,6 @@ node>=10.0.0
 ### Installing
 
 ```shell
-npm install
-```
-
-or
-
-```shell
 yarn install
 ```
 
@@ -30,16 +24,11 @@ yarn install
 yarn run tests
 ```
 
-or
-
-```shell
-npm run tests
-```
-
 ### Usage
 
-1. Run JSON server with the command ```yarn run json:server```
-2. Navigate to `localhost:4000/graphql/graphiql`
+1. Run GraphQL server `yarn start`
+1. Run JSON server `yarn run json:server`
+2. Navigate to `localhost:4000/graphql`
 3. Querying data through GraphiQL in the browser
 
 #### Query Example

@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "id": "43",
-      "firstName": "John",
-      "age": 55,
-      "gender": "male",
-      "country": "U.S.A",
-      "email": "john@gmail.com",
-      "companyId": "2"
-    },
-    {
       "id": "40",
       "firstName": "Alex",
       "age": 18,
@@ -64,6 +55,12 @@
       "name": "Facebook",
       "description": "social",
       "location": "London"
+    },
+    {
+      "id": "10",
+      "name": "SAP",
+      "description": "consulting",
+      "location": "berlin"
     }
   ]
 }

@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 describe('user resolvers', () => {
-	test('aUser', async () => {
-		const response = await axios.post('http://localhost:4000/graphql', {
-			query: `
+  test('aUser', async () => {
+    const response = await axios.post('http://localhost:4000/graphql', {
+      query: `
 			query {
 				user(id: "40") {
 					id
@@ -12,23 +12,23 @@ describe('user resolvers', () => {
 				}
 			}
 			`,
-		});
+    });
 
-		const { data } = response;
-		expect(data).toMatchObject({
-			data: {
-				user: {
-					id: '40',
-					firstName: 'Alex',
-					age: 18,
-				},
-			},
-		});
-	});
+    const { data } = response;
+    expect(data).toMatchObject({
+      data: {
+        user: {
+          id: '40',
+          firstName: 'Alex',
+          age: 18,
+        },
+      },
+    });
+  });
 
-	test('aCompany', async () => {
-		const response = await axios.post('http://localhost:4000/graphql', {
-			query: `
+  test('aCompany', async () => {
+    const response = await axios.post('http://localhost:4000/graphql', {
+      query: `
 			query {
 				company(id: "1") {
 					id
@@ -37,23 +37,23 @@ describe('user resolvers', () => {
 				}
 			}
 			`,
-		});
+    });
 
-		const { data } = response;
-		expect(data).toMatchObject({
-			data: {
-				company: {
-					id: '1',
-					name: 'Apple',
-					description: 'iphone',
-				},
-			},
-		});
-	});
+    const { data } = response;
+    expect(data).toMatchObject({
+      data: {
+        company: {
+          id: '1',
+          name: 'Apple',
+          description: 'iphone',
+        },
+      },
+    });
+  });
 
-	test('aUserWithCompany', async () => {
-		const response = await axios.post('http://localhost:4000/graphql', {
-			query: `
+  test('aUserWithCompany', async () => {
+    const response = await axios.post('http://localhost:4000/graphql', {
+      query: `
 			query {
 				user(id:"40") {
 					firstName
@@ -66,21 +66,21 @@ describe('user resolvers', () => {
 				}
 			}
 			`,
-		});
+    });
 
-		const { data } = response;
-		expect(data).toMatchObject({
-			data: {
-				user: {
-					firstName: 'Alex',
-					age: 18,
-					company: {
-						id: '2',
-						name: 'Google',
-						description: 'search',
-					},
-				},
-			},
-		});
-	});
+    const { data } = response;
+    expect(data).toMatchObject({
+      data: {
+        user: {
+          firstName: 'Alex',
+          age: 18,
+          company: {
+            id: '2',
+            name: 'Google',
+            description: 'search',
+          },
+        },
+      },
+    });
+  });
 });
